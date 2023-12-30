@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+<!--Hasta Bilgileri-->
+    <Patient_info>
+        <ID>111111</ID>
+        <Name>John</Name>
+        <Surname>Doe</Surname>
+    </Patient_info>
+<!--tPA verildi ise True verilmedi ise False-->
+    <is_tPA_given>False</is_tPA_given>
+<!--Giriş Muayenesi-->
+    <Exam_Entry>
+<!--Bilinç: Açık=0, Konfü/obluntasyon=1, Stupor=2 , Komatöz/refleks cevap=3-->
+        <Consiousness>2</Consiousness>
+<!--(Kaç yaşındasın hangi aydayız?): Hepsi yalnış(veya afazi/koma)=2, 
+Biri yalnış=1(entübe,dizartri de 1), Hepsi doğru=0-->
+        <Orientation>2</Orientation>
+<!--(Sağlam eli aç/kapa,göz aç/kapa): Sağlam 0; Biri yok=1(entübe,dizarti,dil bilmiyor), Hiçbiri=2-->
+        <Cooperation>2</Cooperation>
+        <Eye>
+<!--Normal=0, Oftalmoparezi=1 , Deviasyon/total parezi(Okülosefalik ile düzelme yok)=2-->
+            <Movements>1</Movements>
+<!--Normal=0, Parsiyel hemianopsi=1, Total hemianopsi=2, Bilateral hemianopi=3-->
+            <Vision>0</Vision>
+        </Eye>
+<!--Normal=0, Hafif(NLO silik vs.)=1, Alt yüz parsiyel=2, Uni veya bilateral,tam paralizi(koma)=3-->
+        <Facial>1</Facial>
+<!-- Kas gücünü x/5 değil x olarak yazın. Ampüte ise 0-->
+        <Muscle> 
+<!--UL=Sol üst , UR=Sağ üst , LL=Sol alt, LR=Sağ alt-->
+            <UpperL>2</UpperL>
+            <UpperR>2</UpperR>
+            <LowerL>4</LowerL>
+            <LowerR>4</LowerR>
+        </Muscle>
+<!--Ataksi(Yapılmazsa parmak burun): Yoksa=0, Tek ekst=1,Üst ve alt ekst=2-->
+        <Cerebellar>1</Cerebellar>
+<!--Duyu: Normalse=0, hipoestezi(test edilemiyor)=1, anestezi(kuadroplejik,Bilinç=3 ise)=2-->
+        <Sensory>1</Sensory>
+        <Language>
+<!--Afazi: Yok=0, Hafif(Kısmen anlaşır)=1 , Ağır(Hiç anlaşılmaz)=2, Global mutizim/afazi=3-->
+            <Aphasia>2</Aphasia>
+<!--Disarti: Yok=0, Hafif=1, Ağır(Anlaşılmaz,mutizim)=2-->
+            <Dysarthria>2</Dysarthria>
+        </Language>
+ <!--Yok/değerlendirilemdi=0; Tek modalitede=1, Multipl modalite=2-->
+        <Neglect>0</Neglect>
+<!--NIHSS Skoru(18)--> 
+        <NIHSS_Score></NIHSS_Score>
+    </Exam_Entry>
+
+<!--Çıkış Muayenesi-->
+    <Exam_Extern>
+<!--Bilinç: Açık=0, Konfü/obluntasyon=1, Stupor=2 , Komatöz/refleks cevap=3-->
+        <Consiousness>1</Consiousness>
+<!--(Kaç yaşındasın hangi aydayız?): Hepsi yalnış(veya afazi/koma)=2, 
+Biri yalnış=1(entübe,dizartri de 1), Hepsi doğru=0-->
+        <Orientation>1</Orientation>
+<!--(Sağlam eli aç/kapa,göz aç/kapa): Sağlam 0; Biri yok=1(entübe,dizarti,dil bilmiyor), Hiçbiri=2-->
+        <Cooperation>1</Cooperation>
+        <Eye>
+<!--Normal=0, Oftalmoparezi=1 , Deviasyon/total parezi(Okülosefalik ile düzelme yok)=2-->
+            <Movements>0</Movements>
+<!--Normal=0, Parsiyel hemianopsi=1, Total hemianopsi=2, Bilateral hemianopi=3-->
+            <Vision>0</Vision>
+        </Eye>
+<!--Normal=0, Hafif(NLO silik vs.)=1, Alt yüz parsiyel=2, Uni veya bilateral,tam paralizi(koma)=3-->
+        <Facial>1</Facial>
+<!-- Kas gücünü x/5 değil x olarak yazın. Ampüte ise 0-->
+        <Muscle> 
+<!--UL=Sol üst , UR=Sağ üst , LL=Sol alt, LR=Sağ alt-->
+            <UpperL>3</UpperL>
+            <UpperR>3</UpperR>
+            <LowerL>4</LowerL>
+            <LowerR>4</LowerR>
+        </Muscle>
+<!--Ataksi(Yapılmazsa parmak burun): Yoksa=0, Tek ekst=1,Üst ve alt ekst=2-->
+        <Cerebellar>1</Cerebellar>
+<!--Duyu: Normalse=0, hipoestezi(test edilemiyor)=1, anestezi(kuadroplejik,Bilinç=3 ise)=2-->
+        <Sensory>1</Sensory>
+        <Language>
+<!--Afazi: Yok=0, Hafif(Kısmen anlaşır)=1 , Ağır(Hiç anlaşılmaz)=2, Global mutizim/afazi=3-->
+            <Aphasia>2</Aphasia>
+<!--Disarti: Yok=0, Hafif=1, Ağır(Anlaşılmaz,mutizim)=2-->
+            <Dysarthria>1</Dysarthria>
+        </Language>
+ <!--Yok/değerlendirilemdi=0; Tek modalitede=1, Multipl modalite=2-->
+        <Neglect>0</Neglect>
+<!--NIHSS Skoru(11 Hesaplanınca yazılacak)--> 
+        <NIHSS_Score></NIHSS_Score>
+    </Exam_Extern>
+
+<!--1 ay sonraki kontrol muayenesi-->
+    <Exam_1MControl>
+<!--Bilinç: Açık=0, Konfü/obluntasyon=1, Stupor=2 , Komatöz/refleks cevap=3-->
+        <Consiousness>0</Consiousness>
+<!--(Kaç yaşındasın hangi aydayız?): Hepsi yalnış(veya afazi/koma)=2, 
+Biri yalnış=1(entübe,dizartri de 1), Hepsi doğru=0-->
+        <Orientation>0</Orientation>
+<!--(Sağlam eli aç/kapa,göz aç/kapa): Sağlam 0; Biri yok=1(entübe,dizarti,dil bilmiyor), Hiçbiri=2-->
+        <Cooperation>0</Cooperation>
+        <Eye>
+<!--Normal=0, Oftalmoparezi=1 , Deviasyon/total parezi(Okülosefalik ile düzelme yok)=2-->
+            <Movements>0</Movements>
+<!--Normal=0, Parsiyel hemianopsi=1, Total hemianopsi=2, Bilateral hemianopi=3-->
+            <Vision>0</Vision>
+        </Eye>
+<!--Normal=0, Hafif(NLO silik vs.)=1, Alt yüz parsiyel=2, Uni veya bilateral,tam paralizi(koma)=3-->
+        <Facial>1</Facial>
+<!-- Kas gücünü x/5 değil x olarak yazın. Ampüte ise 0-->
+        <Muscle> 
+<!--UL=Sol üst , UR=Sağ üst , LL=Sol alt, LR=Sağ alt-->
+            <UpperL>5</UpperL>
+            <UpperR>5</UpperR>
+            <LowerL>5</LowerL>
+            <LowerR>5</LowerR>
+        </Muscle>
+<!--Ataksi(Yapılmazsa parmak burun): Yoksa=0, Tek ekst=1,Üst ve alt ekst=2-->
+        <Cerebellar>0</Cerebellar>
+<!--Duyu: Normalse=0, hipoestezi(test edilemiyor)=1, anestezi(kuadroplejik,Bilinç=3 ise)=2-->
+        <Sensory>0</Sensory>
+        <Language>
+<!--Afazi: Yok=0, Hafif(Kısmen anlaşır)=1 , Ağır(Hiç anlaşılmaz)=2, Global mutizim/afazi=3-->
+            <Aphasia>1</Aphasia>
+<!--Disarti: Yok=0, Hafif=1, Ağır(Anlaşılmaz,mutizim)=2-->
+            <Dysarthria>1</Dysarthria>
+        </Language>
+ <!--Yok/değerlendirilemdi=0; Tek modalitede=1, Multipl modalite=2-->
+        <Neglect>0</Neglect>
+<!--NIHSS Skoru(3)--> 
+        <NIHSS_Score></NIHSS_Score>
+    </Exam_1MControl>
+
+</Patient>
